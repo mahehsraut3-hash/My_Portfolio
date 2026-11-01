@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Mahesh Raut - BCA Student, Full-Stack Developer & Programmer">
+    <title>Mahesh Raut | Full-Stack Developer Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator Bar -->
+    <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#about" class="nav-logo">
+                <span class="accent">&lt;</span>Mahesh<span class="accent">/&gt;</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link active">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#project" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Theme Toggle & Mobile Menu Button -->
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Mode" aria-label="Toggle theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Open navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero / Intro Section -->
+    <section class="hero-section" id="about">
+        <div class="hero-glow-1"></div>
+        <div class="hero-glow-2"></div>
+
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <!-- Status Badge -->
+                <div class="status-badge">
+                    <span class="status-dot"></span>
+                    <span>Available for Internships & Projects</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Hey, I'm <br>
+                    <span class="gradient-text">Mahesh Raut</span>
+                </h1>
+
+                <div class="hero-subtitle">
+                    A <span class="typing-text"></span><span class="cursor">|</span>
+                </div>
+
+                <p class="hero-desc">
+                    I am currently pursuing a <strong>Bachelor of Computer Applications (BCA)</strong>.
+                    Passionate about building full-stack web applications, AI-assisted tools, and modern interactive systems.
+                    Check out my open-source projects on GitHub!
+                </p>
+
+                <div class="hero-cta">
+                    <a href="#project" class="btn btn-primary">
+                        <i class="fa-solid fa-layer-group"></i> Explore Projects
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fa-solid fa-paper-plane"></i> Get In Touch
+                    </a>
+                </div>
+
+                <!-- Social Quick Links -->
+                <div class="social-links">
+                    <a href="https://github.com/mahehsraut3-hash" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub Profile">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mahesh-raut-7a5933344/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:mrunalr216@gmail.com" class="social-btn" title="Send Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Avatar with Fallback -->
+            <div class="hero-image-wrapper reveal">
+                <div class="profile-card">
+                    <div class="profile-img-container">
+                        <img src="Mahesh_Raut.jpeg" 
+                             alt="Mahesh Raut" 
+                             class="profile-img"
+                             onerror="this.style.display='none'; document.getElementById('avatarFallback').classList.remove('hidden');">
+                        
+                        <!-- Fallback Avatar if image is missing -->
+                        <div id="avatarFallback" class="avatar-fallback hidden">
+                            <i class="fa-solid fa-code"></i>
+                            <span>MR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Info Badge -->
+                <div class="floating-badge">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <div class="floating-badge-text">
+                        <strong>11+ Repositories</strong>
+                        <span>Open Source on GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Details Section -->
+    <section class="section">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Personal Narrative Card -->
+                <div class="about-card reveal">
+                    <span class="section-tag">Background</span>
+                    <h3>Building Real-World Full-Stack & AI Solutions</h3>
+                    <p>
+                        While pursuing my Bachelor of Computer Applications, I have focused heavily on practical software engineering:
+                        architecting end-to-end web apps, integrating AI-driven matching algorithms, building tamper-proof verification systems,
+                        and managing responsive UIs.
+                    </p>
+                    <p>
+                        From React frontends and Node.js REST APIs to Python FastAPI microservices and mobile apps, 
+                        I thrive on taking ambitious ideas from concept to functional, polished software.
+                    </p>
+
+                    <div class="info-pills-grid">
+                        <div class="info-pill">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div class="info-pill-text">
+                                <small>Degree</small>
+                                <span>BCA Undergrad</span>
+                            </div>
+                        </div>
+                        <div class="info-pill">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <div class="info-pill-text">
+                                <small>Specialization</small>
+                                <span>Full-Stack & Web</span>
+                            </div>
+                        </div>
+                        <div class="info-pill">
+                            <i class="fa-brands fa-github"></i>
+                            <div class="info-pill-text">
+                                <small>GitHub</small>
+                                <span>@mahehsraut3-hash</span>
+                            </div>
+                        </div>
+                        <div class="info-pill">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="info-pill-text">
+                                <small>Location</small>
+                                <span>India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terminal / Code Showcase -->
+                <div class="terminal-card reveal">
+                    <div class="terminal-header">
+                        <span class="terminal-dot dot-red"></span>
+                        <span class="terminal-dot dot-yellow"></span>
+                        <span class="terminal-dot dot-green"></span>
+                        <span class="terminal-title">mahesh_profile.json</span>
+                    </div>
+                    <pre class="terminal-body"><code>{
+  <span class="code-key">"name"</span>: <span class="code-str">"Mahesh Raut"</span>,
+  <span class="code-key">"role"</span>: <span class="code-str">"Full-Stack & Software Developer"</span>,
+  <span class="code-key">"languages"</span>: [
+    <span class="code-arr">"C"</span>,
+    <span class="code-arr">"C++"</span>,
+    <span class="code-arr">"Java"</span>,
+    <span class="code-arr">"Python"</span>,
+    <span class="code-arr">"JavaScript"</span>,
+    <span class="code-arr">"TypeScript"</span>
+  ],
+  <span class="code-key">"frameworks_and_engines"</span>: [
+    <span class="code-arr">"React"</span>,
+    <span class="code-arr">"Node.js"</span>,
+    <span class="code-arr">"FastAPI"</span>,
+    <span class="code-arr">"Unity"</span>
+  ],
+  <span class="code-key">"status"</span>: <span class="code-str">"Building, Learning & Shipping"</span>,
+  <span class="code-key">"open_to_work"</span>: <span class="code-bool">true</span>
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Tech Stack</span>
+                <h2 class="section-title">My Technical Skills</h2>
+                <p class="section-subtitle">Core languages, frameworks, and tools used across my projects</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- C Language -->
+                <div class="skill-card skill-c reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">C Language</h3>
+                        <p class="skill-desc">Pointers, memory management, procedural logic & data structures.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- C++ -->
+                <div class="skill-card skill-cpp reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">C++</h3>
+                        <p class="skill-desc">Object-Oriented Programming (OOP), STL, templates & algorithms.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 78%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <div class="skill-card skill-java reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">Java</h3>
+                        <p class="skill-desc">Core Java, class hierarchies, multithreading, and JVM applications.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Unity & C# -->
+                <div class="skill-card skill-unity reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-unity"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">Unity & C#</h3>
+                        <p class="skill-desc">Game engine physics, 2D/3D scenes, animations & C# scripting.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 72%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python & FastAPI -->
+                <div class="skill-card skill-python reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">Python & FastAPI</h3>
+                        <p class="skill-desc">REST APIs, NLP TF-IDF matching, automated parsing & scripting.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React & Vite -->
+                <div class="skill-card skill-react reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">React & Vite</h3>
+                        <p class="skill-desc">Component state, hooks, Vite tooling & responsive UI engineering.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Node.js & Express -->
+                <div class="skill-card skill-node reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-node-js"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">Node.js & Express</h3>
+                        <p class="skill-desc">Server-side APIs, JWT auth, sessions, Multer file handling & SQLite.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TypeScript & JavaScript -->
+                <div class="skill-card skill-ts reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">TypeScript & JavaScript</h3>
+                        <p class="skill-desc">Type-safe codebases, ES6+ features, async programming & DOM.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HTML5 & CSS3 -->
+                <div class="skill-card skill-html reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">HTML5 & CSS3</h3>
+                        <p class="skill-desc">Semantic structure, modern Flexbox & Grid layouts, animations.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Git & GitHub -->
+                <div class="skill-card skill-git reveal">
+                    <div class="skill-icon-wrapper">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <div class="skill-info">
+                        <h3 class="skill-title">Git & GitHub</h3>
+                        <p class="skill-desc">Version control, monorepo management & repository workflows.</p>
+                        <div class="skill-level-bar">
+                            <div class="skill-level-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="project">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">GitHub Projects</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Real-world full-stack web applications, AI matchers, and systems from my GitHub</p>
+            </div>
+
+            <!-- Project Category Filter Buttons -->
+            <div class="project-filters reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack & AI</button>
+                <button class="filter-btn" data-filter="webapp">Web Systems</button>
+                <button class="filter-btn" data-filter="frontend">Productivity & Mobile</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: SkillSync AI -->
+                <div class="project-card reveal" data-category="fullstack">
+                    <div class="project-banner project-banner-jobsync">
+                        <i class="fa-solid fa-brain-circuit project-icon-large"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Python (FastAPI)</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">AI/NLP</span>
+                            <span class="project-tag">Tailwind</span>
+                        </div>
+                        <h3 class="project-title">SkillSync AI · Smart Job Portal</h3>
+                        <p class="project-description">
+                            A production-grade recruitment portal featuring automated resume parsing (PDF/DOCX), 0–100% explainable AI candidate scoring with TF-IDF cosine similarity, and skill-gap upskilling roadmaps.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahehsraut3-hash/Smart-Job-Portal-with-Skill" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="project-btn">
+                                <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Event Management & Ticket Booking -->
+                <div class="project-card reveal" data-category="fullstack">
+                    <div class="project-banner project-banner-events">
+                        <i class="fa-solid fa-ticket-simple project-icon-large"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React 19</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">Razorpay</span>
+                            <span class="project-tag">QR Check-In</span>
+                        </div>
+                        <h3 class="project-title">Event Booking & Ticket System</h3>
+                        <p class="project-description">
+                            Full-stack event discovery and atomic ticket reservation platform. Features tamper-proof cryptographic QR gate check-ins, Razorpay checkout, transactional emails, and admin event analytics.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahehsraut3-hash/Event-Management-and-Ticket-Booking-System" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="project-btn">
+                                <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Credentia -->
+                <div class="project-card reveal" data-category="webapp">
+                    <div class="project-banner project-banner-cert">
+                        <i class="fa-solid fa-shield-halved project-icon-large"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React (Vite)</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">HMAC-SHA256</span>
+                            <span class="project-tag">Security</span>
+                        </div>
+                        <h3 class="project-title">Credentia · Certificate Verification</h3>
+                        <p class="project-description">
+                            Tamper-proof digital certificate issuance and public verification platform. Issues unique IDs and QR codes with HMAC-SHA256 digital signatures, instant verification portals, and revocation controls.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahehsraut3-hash/Digital-Certificate-Verification-System" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="project-btn">
+                                <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Campus Complaint Management -->
+                <div class="project-card reveal" data-category="webapp">
+                    <div class="project-banner project-banner-campus">
+                        <i class="fa-solid fa-building-columns project-icon-large"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">SQLite</span>
+                            <span class="project-tag">Multer</span>
+                            <span class="project-tag">Auth</span>
+                        </div>
+                        <h3 class="project-title">Smart Campus Complaint System</h3>
+                        <p class="project-description">
+                            Academic grievance management system enabling student issue logging with photo proof, multi-role dashboards (Admin, Staff, Student), staff assignment, and transparent resolution status tracking.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahehsraut3-hash/Campus-Complaint-Management-System" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="project-btn">
+                                <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Trackiyy -->
+                <div class="project-card reveal" data-category="frontend">
+                    <div class="project-banner project-banner-trackiyy">
+                        <i class="fa-solid fa-chart-line project-icon-large"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Supabase</span>
+                            <span class="project-tag">Tailwind CSS</span>
+                        </div>
+                        <h3 class="project-title">Trackiyy · Productivity Platform</h3>
+                        <p class="project-description">
+                            Modern productivity workspace built with React and TypeScript. Connects to Supabase for real-time cloud data storage, responsive task workflows, and goal tracking.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahehsraut3-hash/Trackiyy" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="project-btn">
+                                <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Habit-Tracker -->
+                <div class="project-card reveal" data-category="frontend">
+                    <div class="project-banner project-banner-habit">
+                        <i class="fa-solid fa-mobile-screen-button project-icon-large"></i>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Expo</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">SQLite</span>
+                        </div>
+                        <h3 class="project-title">Habit Tracker Mobile App</h3>
+                        <p class="project-description">
+                            Cross-platform mobile application for routine building and daily habit tracking. Built with React Native and TypeScript, featuring streak computations and offline local SQLite database.
+                        </p>
+                        <div class="project-actions">
+                            <a href="https://github.com/mahehsraut3-hash/Habit-Tracker" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="project-btn">
+                                <i class="fa-brands fa-github"></i> View on GitHub <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.75rem;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- More Repositories Button -->
+            <div class="projects-more-btn-wrapper reveal">
+                <a href="https://github.com/mahehsraut3-hash?tab=repositories" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-secondary">
+                    <i class="fa-brands fa-github"></i> Explore All 11+ Repositories on GitHub <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 0.8rem;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Have a question or interested in working together? Drop a message!</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Direct Cards -->
+                <div class="contact-info-panel reveal">
+                    <!-- Email Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span>Email Address</span>
+                            <a href="mailto:mrunalr216@gmail.com">mrunalr216@gmail.com</a>
+                        </div>
+                        <button class="copy-btn" id="copyEmailBtn" title="Copy Email">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                    </div>
+
+                    <!-- LinkedIn Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span>LinkedIn Profile</span>
+                            <a href="https://www.linkedin.com/in/mahesh-raut-7a5933344/" target="_blank" rel="noopener noreferrer">
+                                mahesh-raut-7a5933344
+                            </a>
+                        </div>
+                        <a href="https://www.linkedin.com/in/mahesh-raut-7a5933344/" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                        </a>
+                    </div>
+
+                    <!-- GitHub Card -->
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <span>GitHub Profile</span>
+                            <a href="https://github.com/mahehsraut3-hash" target="_blank" rel="noopener noreferrer">
+                                mahehsraut3-hash
+                            </a>
+                        </div>
+                        <a href="https://github.com/mahehsraut3-hash" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Message Form -->
+                <div class="contact-form-card reveal">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="e.g. Rahul Sharma" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="e.g. rahul@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-control" placeholder="Hi Mahesh, I would like to talk about..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4>Mahesh Raut</h4>
+                    <p>BCA Student & Full-Stack Developer • Building modern digital experiences</p>
+                </div>
+
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="social-links">
+                    <a href="https://github.com/mahehsraut3-hash" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mahesh-raut-7a5933344/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:mrunalr216@gmail.com" class="social-btn" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Mahesh Raut. Crafted with passion & code.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button class="back-to-top" id="backToTop" title="Back to top" aria-label="Back to top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification Popup -->
+    <div class="toast-container" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span id="toastMsg">Action completed successfully!</span>
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
